@@ -1,6 +1,6 @@
 # Autism Detection from Facial Images using Convolutional Neural Networks (CNN)
 
-This project uses a Convolutional Neural Network (CNN) to classify facial images of children as either **Autistic** or **Non-Autistic**. The model is trained on a publicly available image dataset and achieves over **76% test accuracy**.
+This project uses a Convolutional Neural Network (CNN) to classify facial images of children as either **Autistic** or **Non-Autistic**. The model is trained on a publicly available image dataset and achieves over **89% test accuracy**. This project is for educational and research purposes only.
 
 The goal is to explore the potential of computer vision in supporting early autism detection using facial cues.
 
@@ -20,9 +20,9 @@ python train.py
 python evaluate.py
 
 ### Model 
-- Architecture: Custom CNN (3 Conv layers + ReLU + MaxPool + FC)
-- Loss Function: Binary Cross-Entropy
+- Architecture: ResNet18
+- Loss Function: Binary Cross-Entropy with Logits
 - Optimizer: Adam
 - Input size: 224x224 RGB images
 - Output: Probability of being Autistic
-
+- Data Augmentation: Flip, rotation, color jitter (for train)
